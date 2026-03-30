@@ -3,84 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>GlowFit Gym</title>
 </head>
-<header>
-    <table width="100%">
-        <tr>
-            <td width="120">
-                <img src="GLOWFIT.png" width="100">
-            </td>
-            <td>
-                <h1>GLOWFIT GYM</h1>
-            </td>
-        </tr>
-    </table>
-</header>
-<nav>
-    <a href="#">Beranda</a> |
-    <a href="#">Membership</a> |
-    <a href="#">Jadwal Kelas</a> |
-    <a href="#">Laporan Member</a>
-</nav>
-<p>Selamat datang di Sistem Membership GlowFit Gym</p>
-<aside>
-    <h3>Informasi Gym</h3>
+<body>
+    <!-- Header dengan logo dan judul -->
+    <header class="main-header">
+        <table class="header-table">
+            <tr>
+                <td class="logo-cell">
+                    <img src="GLOWFIT GYM.png" alt="Logo GlowFit" class="gym-logo">
+                </td>
+                <td class="title-cell">
+                    <h1>GLOWFIT GYM</h1>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Navigasi utama -->
+    <nav class="main-nav">
+        <a href="#">Beranda</a> |
+        <a href="#">Membership</a> | 
+        <a href="#">Jadwal Gym</a> |
+        <a href="#">Laporan Member</a>
+    </nav>
+
+    <!-- Container utama dengan sidebar dan content -->
+    <div class="page-container">
+        <!-- Sidebar untuk info gym -->
+        <aside class="gym-sidebar">
+            <h3>Info Gym</h3>
+            <table class="gym-stats-table">
+                <thead>
+                    <tr>
+                        <th>Informasi</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Member</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Member Aktif</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Member Baru</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas Gym</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Trainer</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Filter</h3>
+            <label><input type="checkbox"> Aktif</label><br>
+            <label><input type="checkbox"> Tidak Aktif</label>
+        </aside>
+
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- Welcome section -->
+            <section class="welcome-section">
+                <h2>Selamat datang di Sistem Membership GlowFit Gym</h2>
+                <p>Website sederhana untuk mengelola membership gym</p>
+            </section>
+
+            <!-- FORM PENCARIAN -->
+            <section class="search-section">
+                <h3>Cari Member</h3>
+                <input type="text" placeholder="Masukkan nama...">
+                <button>Cari</button>
+            </section>
+  
+            <!-- GRID CARD -->
+            <section class="card-section">
+            <h3>Daftar Member</h3>
+            <div class="card-container">
+                <div class="card">Member 1</div>
+                <div class="card">Member 2</div>
+                <div class="card">Member 3</div>
+                <div class="card">Member 4</div>
+            </div>
+            </section>
+
+            <section class="schedule-section">
+                <h3>Jadwal Gym Member</h3>
+              
+                <table class="schedule-table">
+                  <thead>
+                    <tr>
+                      <th>Nama Member</th>
+                      <th>Hari</th>
+                      <th>Jam</th>
+                      <th>Kegiatan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Andi</td>
+                      <td>Senin</td>
+                      <td>08.00 - 09.00</td>
+                      <td>Workout</td>
+                    </tr>
+                    <tr>
+                      <td>Sinta</td>
+                      <td>Selasa</td>
+                      <td>17.00 - 18.00</td>
+                      <td>Cardio</td>
+                    </tr>
+                    <tr>
+                      <td>Budi</td>
+                      <td>Rabu</td>
+                      <td>16.00 - 17.00</td>
+                      <td>Angkat Beban</td>
+                    </tr>
+                    <tr>
+                      <td>Dewi</td>
+                      <td>Kamis</td>
+                      <td>18.00 - 19.00</td>
+                      <td>HIIT</td>
+                    </tr>
+                    <tr>
+                      <td>Rina</td>
+                      <td>Jumat</td>
+                      <td>07.00 - 08.00</td>
+                      <td>Yoga</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="footer-container">
+          <div>About</div>
+          <div>Contact</div>
+          <div>Social Media</div>
+        </div>
+      </footer>
     
-    <table border ="1">
-    <tr>
-    <th>Informasi Gym</th>
-    <th>Jumlah</th>
-    </tr>
-    
-    <tr>
-    <td>Total Member</td>
-    <td>120</td>
-    </tr>
-    
-    <tr>
-    <td>Member Aktif</td>
-    <td>95</td>
-    </tr>
-    
-    <tr>
-    <td>Member Baru</td>
-    <td>10</td>
-    </tr>
-    
-    <tr>
-    <td>Kelas Gym</td>
-    <td>6</td>
-    </tr>
-    
-    <tr>
-    <td>Trainer</td>
-    <td>4</td>
-    </tr>
-    
-    </table>
-    
-</aside>
-<section>
-    <h3>Contact Us</h3>
-    
-    <p>
-    <img src="email.png" width="20">
-    Email : glowfitgym@gmail.com
-    </p>
-    
-    <p>
-    <img src="instagram.png" width="20">
-    Instagram : @glowfitgym
-    </p>
-    
-    <p>
-    <img src="whatsapp.png" width="20">
-    WhatsApp : 0812-xxxx-xxxx
-    </p>
-    
-</section>
-<footer style="position:fixed; bottom:0; width:100%; text-align:center;">
-    <p>&copy; 2026 Sistem Membership GlowFit Gym</p>
-</footer>
+</body>
 </html>

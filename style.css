@@ -1,0 +1,258 @@
+/* ================= RESET ================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ================= BODY ================= */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #FCEDD8, #FFD464, #FF5E5E);
+    color: #B0183D;
+    padding-top: 60px;
+  }
+
+  .header-table {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .logo-cell {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .gym-logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto; /* 🔥 ini yang bikin benar-benar tengah */
+  }
+  
+  /* ================= NAVBAR ================= */
+  .main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #B0183D;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .main-nav a {
+    color: #FCEDD8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* ================= HEADER ================= */
+  .main-header {
+    background: #FF5E5E;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* ================= LAYOUT ================= */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* ================= SIDEBAR ================= */
+  .gym-sidebar {
+    background: #FCEDD8;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* ================= TABLE ================= */
+  .gym-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .gym-stats-table th,
+  .gym-stats-table td {
+    border: 1px solid #FFD464;
+    padding: 8px;
+  }
+  
+  .gym-stats-table th {
+    background: #FF5E5E;
+    color: white;
+  }
+  
+  .gym-stats-table tr:nth-child(even) {
+    background: #FFF5E5;
+  }
+  
+  /* ================= MAIN CONTENT ================= */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ================= WELCOME ================= */
+  .welcome-section {
+    background: #FFD464;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+/* ================= SCHEDULE ================= */
+.schedule-section {
+    background: #FCEDD8;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #FFD464;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    border: 1px solid #FFD464;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .schedule-table th {
+    background: #FF5E5E;
+    color: white;
+  }
+  
+  .schedule-table tr:nth-child(even) {
+    background: #FFF5E5;
+  }
+/* ================= CONTACT ================= */
+.contact-section {
+    margin-top: 10px;
+  }
+  
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #FCEDD8;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #FFD464;
+  }
+  
+  /* 🔥 FIX GAMBAR BIAR TIDAK BESAR */
+  .contact-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  /* ================= FORM ================= */
+  .search-section {
+    margin-bottom: 10px;
+  }
+  
+  .search-section input {
+    padding: 8px;
+    border: 1px solid #FFD464;
+    margin-right: 5px;
+  }
+  
+  .search-section button {
+    background: #FF5E5E;
+    color: white;
+    padding: 8px;
+    border: none;
+  }
+  
+  /* ================= GRID CARD ================= */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .card {
+    background: #FCEDD8;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #FFD464;
+    border-radius: 8px;
+  
+    transition: 0.2s; /* animasi */
+  }
+  
+  .card:hover {
+    background: #FFD464;
+  }
+  
+  /* ================= FOOTER ================= */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #B0183D;
+    color: #FCEDD8;
+    text-align: center;
+    padding: 15px;
+  }
+  .footer-container div {
+    padding: 10px;
+    transition: 0.2s;
+  }
+  
+  .footer-container div:hover {
+    background: #E23C64;
+    color: white;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  
+  /* TABLET */
+  @media (min-width: 768px) {
+    .page-container {
+      flex-direction: row;
+    }
+    @media (min-width: 768px) {
+        .footer-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .gym-sidebar {
+      width: 30%;
+    }
+  
+    .main-content {
+      width: 70%;
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* DESKTOP */
+  @media (min-width: 1024px) {
+    .card-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
