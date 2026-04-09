@@ -1,157 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>GlowFit Gym</title>
+<meta charset="UTF-8">
+<title>GlowFit Gym</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header dengan logo dan judul -->
-    <header class="main-header">
-        <table class="header-table">
-            <tr>
-                <td class="logo-cell">
-                    <img src="GLOWFIT GYM.png" alt="Logo GlowFit" class="gym-logo">
-                </td>
-                <td class="title-cell">
-                    <h1>GLOWFIT GYM</h1>
-                </td>
-            </tr>
-        </table>
-    </header>
 
-    <!-- Navigasi utama -->
-    <nav class="main-nav">
-        <a href="#">Beranda</a> |
-        <a href="#">Membership</a> | 
-        <a href="#">Jadwal Gym</a> |
-        <a href="#">Laporan Member</a>
-    </nav>
-
-    <!-- Container utama dengan sidebar dan content -->
-    <div class="page-container">
-        <!-- Sidebar untuk info gym -->
-        <aside class="gym-sidebar">
-            <h3>Info Gym</h3>
-            <table class="gym-stats-table">
-                <thead>
-                    <tr>
-                        <th>Informasi</th>
-                        <th>Jumlah</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Total Member</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <td>Member Aktif</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>Member Baru</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas Gym</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>Trainer</td>
-                        <td>4</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Filter</h3>
-            <label><input type="checkbox"> Aktif</label><br>
-            <label><input type="checkbox"> Tidak Aktif</label>
-        </aside>
-
-        <!-- Main content area -->
-        <main class="main-content">
-            <!-- Welcome section -->
-            <section class="welcome-section">
-                <h2>Selamat datang di Sistem Membership GlowFit Gym</h2>
-                <p>Website sederhana untuk mengelola membership gym</p>
-            </section>
-
-            <!-- FORM PENCARIAN -->
-            <section class="search-section">
-                <h3>Cari Member</h3>
-                <input type="text" placeholder="Masukkan nama...">
-                <button>Cari</button>
-            </section>
-  
-            <!-- GRID CARD -->
-            <section class="card-section">
-            <h3>Daftar Member</h3>
-            <div class="card-container">
-                <div class="card">Member 1</div>
-                <div class="card">Member 2</div>
-                <div class="card">Member 3</div>
-                <div class="card">Member 4</div>
-            </div>
-            </section>
-
-            <section class="schedule-section">
-                <h3>Jadwal Gym Member</h3>
-              
-                <table class="schedule-table">
-                  <thead>
-                    <tr>
-                      <th>Nama Member</th>
-                      <th>Hari</th>
-                      <th>Jam</th>
-                      <th>Kegiatan</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Andi</td>
-                      <td>Senin</td>
-                      <td>08.00 - 09.00</td>
-                      <td>Workout</td>
-                    </tr>
-                    <tr>
-                      <td>Sinta</td>
-                      <td>Selasa</td>
-                      <td>17.00 - 18.00</td>
-                      <td>Cardio</td>
-                    </tr>
-                    <tr>
-                      <td>Budi</td>
-                      <td>Rabu</td>
-                      <td>16.00 - 17.00</td>
-                      <td>Angkat Beban</td>
-                    </tr>
-                    <tr>
-                      <td>Dewi</td>
-                      <td>Kamis</td>
-                      <td>18.00 - 19.00</td>
-                      <td>HIIT</td>
-                    </tr>
-                    <tr>
-                      <td>Rina</td>
-                      <td>Jumat</td>
-                      <td>07.00 - 08.00</td>
-                      <td>Yoga</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
-        </main>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">GlowFit Gym</div>
+    <div class="menu">
+        <a href="#">Beranda</a>
+        <a href="#">Membership</a>
+        <a href="#">Kelas</a>
+        <a href="#">Kontak</a>
     </div>
+    <div class="logo">
+        <img src="GLOWFIT GYM.png" alt="GlowFit Gym">
+    </div>
+</nav>
 
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="footer-container">
-          <div>About</div>
-          <div>Contact</div>
-          <div>Social Media</div>
-        </div>
-      </footer>
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h1>BUILD YOUR DREAM BODY</h1>
+        <p>Latihan lebih sehat bersama GlowFit Gym</p>
+        <button>Join Now</button>
+    </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" placeholder="Cari kelas gym...">
+    <button>Cari</button>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-layout">
+
+<!-- CONTENT -->
+<section class="content">
+
+<h2>Rekomendasi Kelas</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001ab">
+<h4>Gym Area</h4>
+<p>Kapasitas: 50</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+<h4>Zumba Class</h4>
+<p>Kapasitas: 30</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<h4>Yoga Class</h4>
+<p>Kapasitas: 20</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+<h4>Cardio Room</h4>
+<p>Kapasitas: 25</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+<h3>Statistik & Filter</h3>
+
+<div class="stat-box pink">Total Member: 120</div>
+<div class="stat-box green">Member Aktif: 95</div>
+
+<hr>
+
+<p>Opsi Filter:</p>
+
+<label><input type="checkbox"> Personal Trainer</label>
+<label><input type="checkbox"> Zumba</label>
+<label><input type="checkbox"> Yoga</label>
+
+</aside>
+
+</div>
+
+<!-- FORM -->
+<section class="form-section">
+    <h2>Form Membership</h2>
     
+    <form class="form-modern">
+    
+    <input type="text" placeholder="Nama Member">
+    <input type="email" placeholder="Email">
+    
+    <input type="text" placeholder="No. HP">
+    <input type="number" placeholder="Durasi (bulan)">
+    
+    <select>
+    <option>Pilih Paket Membership</option>
+    <option>1 Bulan</option>
+    <option>3 Bulan</option>
+    <option>6 Bulan</option>
+    </select>
+    
+    <input type="date">
+    
+    <input type="time">
+    <input type="text" placeholder="Trainer">
+    
+    <button>Simpan Member</button>
+    
+    </form>
+    </section>
+
+<!-- TABLE -->
+<section class="table-section">
+<h2>Data Member</h2>
+
+<div class="table-box">
+
+<table>
+<tr>
+<th>No</th>
+<th>Nama</th>
+<th>Paket</th>
+<th>Status</th>
+</tr>
+
+<tr><td>1</td><td>Alya</td><td>3 Bulan</td><td>Aktif</td></tr>
+<tr><td>2</td><td>Rina</td><td>1 Bulan</td><td>Aktif</td></tr>
+<tr><td>3</td><td>Sinta</td><td>6 Bulan</td><td>Nonaktif</td></tr>
+<tr><td>4</td><td>Dewi</td><td>1 Tahun</td><td>Aktif</td></tr>
+<tr><td>5</td><td>Nadia</td><td>3 Bulan</td><td>Aktif</td></tr>
+
+</table>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-col">
+<h3>GlowFit Gym</h3>
+<p>Fitness Membership System</p>
+</div>
+
+<div class="footer-col">
+<h3>Menu</h3>
+<p>Beranda</p>
+<p>Membership</p>
+<p>Kelas</p>
+</div>
+
+<div class="footer-col">
+<h3>Contact</h3>
+<p>📧 glowfit@gmail.com</p>
+<p>📷 @glowfit</p>
+<p>📱 0812xxxx</p>
+</div>
+
+</footer>
+
 </body>
 </html>
