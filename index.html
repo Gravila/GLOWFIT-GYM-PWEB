@@ -5,21 +5,28 @@
 <title>GlowFit Gym</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<naV>
+<nav>
     <div class="logo">GlowFit Gym</div>
-    <div class="menu">
-        <a href="#">Beranda</a>
-        <a href="#">Membership</a>
-        <a href="#">Kelas</a>
-        <a href="#">Kontak</a>
-    </div>
     <div class="logo">
         <img src="GLOWFIT GYM.png" alt="GlowFit Gym">
+    </div>
+    <div class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="member.html">Paket Membership</a>
+        <a href="#">Kelas GLOWFIT</a>
+        <a href="#">Kontak</a>
+    </div>
+    <div class="nav-search">
+        <input type="text" id="navSearch" placeholder="Cari...">
+        <button id="searchToggle">
+          <i class="fa fa-search"></i>
+        </button>
     </div>
 </nav>
 
@@ -28,15 +35,8 @@
     <div class="overlay">
         <h1>BUILD YOUR DREAM BODY</h1>
         <p>Latihan lebih sehat bersama GlowFit Gym</p>
-        <button>Join Now</button>
     </div>
 </section>
-
-<!-- SEARCH -->
-<div class="search-box">
-    <input type="text" placeholder="Cari kelas gym...">
-    <button>Cari</button>
-</div>
 
 <!-- MAIN LAYOUT -->
 <div class="main-layout">
@@ -49,7 +49,7 @@
 <div class="cards">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001ab">
+<img src="gymarea.png">
 <h4>Gym Area</h4>
 <p>Kapasitas: 50</p>
 </div>
@@ -74,83 +74,67 @@
 
 </div>
 
+<!-- TABLE -->
+<section class="table-section">
+<h2>Data Member</h2>
+
+<div class="tableBox">
+
+    <table>
+        <thead>
+        <tr>
+        <th>Kode</th>
+        <th>Nama</th>
+        <th>Layanan</th>
+        <th>Tanggal</th>
+        <th>Harga</th>
+        <th>Aksi</th>
+        </tr>
+        </thead>
+        
+        <tbody id="tableBody"></tbody>
+        </table>
+
+</div>
+</section>
+
 </section>
 
 <!-- SIDEBAR -->
 <aside class="sidebar">
 
-<h3>Statistik & Filter</h3>
+<div class="sidebar">
 
-<div class="stat-box pink">Total Member: 120</div>
-<div class="stat-box green">Member Aktif: 95</div>
-
-<hr>
-
-<p>Opsi Filter:</p>
-
-<label><input type="checkbox"> Personal Trainer</label>
-<label><input type="checkbox"> Zumba</label>
-<label><input type="checkbox"> Yoga</label>
-
-</aside>
-
+    <!-- STATISTIK -->
+    <div class="stat-section">
+        <h3>Statistik</h3>
+      
+        <div class="stat-box pink">
+        Total Member: <span id="total"></span>
+        </div>
+      
+        <div class="stat-box green">
+        Per Layanan: <span id="stok"></span>
+        </div>
+    </div>
+    <hr>
+      
+    <!-- FILTER -->
+    <div class="filter-section">
+        <h3>Filter Layanan</h3>
+      
+        <select id="filter">
+        <option value="">Semua</option>
+        <option>Basic</option>
+        <option>Premium</option>
+        <option>VIP</option>
+        </select>
+    </div>
+</aside> 
 </div>
-
-<!-- FORM -->
-<section class="form-section">
-    <h2>Form Membership</h2>
-    
-    <form class="form-modern">
-    
-    <input type="text" placeholder="Nama Member">
-    <input type="email" placeholder="Email">
-    
-    <input type="text" placeholder="No. HP">
-    <input type="number" placeholder="Durasi (bulan)">
-    
-    <select>
-    <option>Pilih Paket Membership</option>
-    <option>1 Bulan</option>
-    <option>3 Bulan</option>
-    <option>6 Bulan</option>
-    </select>
-    
-    <input type="date">
-    
-    <input type="time">
-    <input type="text" placeholder="Trainer">
-    
-    <button>Simpan Member</button>
-    
-    </form>
-    </section>
-
-<!-- TABLE -->
-<section class="table-section">
-<h2>Data Member</h2>
-
-<div class="table-box">
-
-<table>
-<tr>
-<th>No</th>
-<th>Nama</th>
-<th>Paket</th>
-<th>Status</th>
-</tr>
-
-<tr><td>1</td><td>Alya</td><td>3 Bulan</td><td>Aktif</td></tr>
-<tr><td>2</td><td>Rina</td><td>1 Bulan</td><td>Aktif</td></tr>
-<tr><td>3</td><td>Sinta</td><td>6 Bulan</td><td>Nonaktif</td></tr>
-<tr><td>4</td><td>Dewi</td><td>1 Tahun</td><td>Aktif</td></tr>
-<tr><td>5</td><td>Nadia</td><td>3 Bulan</td><td>Aktif</td></tr>
-
-</table>
-
-</div>
-</section>
 
 <!-- FOOTER -->
+<div>
 <footer>
 
 <div class="footer-col">
@@ -161,8 +145,8 @@
 <div class="footer-col">
 <h3>Menu</h3>
 <p>Beranda</p>
-<p>Membership</p>
-<p>Kelas</p>
+<p>Paket Membership</p>
+<p>Kelas GLOWFIT</p>
 </div>
 
 <div class="footer-col">
@@ -173,6 +157,12 @@
 </div>
 
 </footer>
+</div>
+<hr>
+</select>
 
+<script src="script.js"></script>
+</body>
 </body>
 </html>
+
