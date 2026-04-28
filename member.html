@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Member Management</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <img src="GLOWFIT GYM.png">
+    <span>GlowFit Gym</span>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Beranda</a>
+    <a href="member.html">Paket Membership</a>
+    <a href="#">Kelas GLOWFIT</a>
+    <a href="#">Kontak</a>
+  </div>
+
+  <div class="nav-search">
+    <input type="text" id="navSearch" placeholder="Cari...">
+    <button id="searchToggle">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</nav>
+
+<div class="main-layout" style="margin-top:100px;">
+
+<!-- ================= CONTENT ================= -->
+<section class="content">
+
+<!-- PACKAGE -->
+<section class="package-section">
+<h2>Pilih Paket Membership</h2>
+
+<div class="package-cards">
+
+<div class="package-card">
+<h3>Basic</h3>
+<p class="price">Rp100.000</p>
+<ul> <li>Akses Gym</li> <li>Jam Terbatas</li> <li>Tidak termasuk kelas</li> <li> Berlaku 1 Bulan</li> </ul>
+<button onclick="pilihPaket('Basic')">Pilih</button>
+</div>
+
+<div class="package-card best">
+<span class="badge">BEST</span>
+<h3>Premium</h3>
+<p class="price">Rp200.000</p>
+<ul> <li>Gym + Kelas</li> <li>Zumba & Yoga</li> <li>Konsultasi Trainer</li> <li> Berlaku 1 Bulan</li> </ul>
+<button onclick="pilihPaket('Premium')">Pilih</button>
+</div>
+
+<div class="package-card">
+<h3>VIP</h3>
+<p class="price">Rp350.000</p>
+<ul> <li>Semua Akses</li> <li>Personal Trainer</li> <li>Prioritas Booking</li> <li> Berlaku 1 Bulan</li> </ul>
+<button onclick="pilihPaket('VIP')">Pilih</button>
+</div>
+
+</div>
+</section>
+
+<!-- FORM -->
+<h2>Form Member</h2>
+
+<form id="memberForm" class="form-modern">
+
+<input type="text" id="nama" placeholder="Nama Member">
+<input type="email" id="emailmember" placeholder="Email">
+<input type="text" id="noHP" placeholder="Nomor HP">
+<input type="number" id="usiamember" placeholder="Usia">
+<input type="text" id="tgllahir" placeholder="Tanggal Lahir(dd/mm/yyyy)">
+
+<select id="layanan">
+<option value="">Pilih Layanan</option>
+<option>Basic</option>
+<option>Premium</option>
+<option>VIP</option>
+</select>
+
+<select id="durasi">
+  <option value="">Pilih Durasi</option>
+  <option value="1">1 Bulan</option>
+  <option value="3">3 Bulan</option>
+  <option value="6">6 Bulan</option>
+  <option value="12">1 Tahun</option>
+</select>
+
+<input type="date" id="tanggal">
+<input type="number" id="harga" placeholder="Harga" readonly>
+<button type="submit">Simpan Member</button>
+
+</form>
+
+<hr>
+
+<!-- SEARCH -->
+<input type="text" id="search" placeholder="Cari nama/kode...">
+
+<!-- TABLE -->
+ <h3>Data Member</h3>
+<table>
+<thead>
+<tr>
+<th>Kode</th>
+<th>Nama</th>
+<th>Email</th>
+<th>Nomor HP</th>
+<th>Usia</th>
+<th>Layanan</th>
+<th>Tanggal</th>
+<th>Harga</th>
+<th>Durasi</th>
+<th>Aksi</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+</table>
+
+</section>
+
+<!-- ================= SIDEBAR ================= -->
+<aside class="sidebar">
+
+<div class="stat-section">
+<h3>Statistik</h3>
+
+<div class="stat-box pink">
+Total Member: <span id="total"></span>
+</div>
+
+<div class="stat-box green">
+Per Layanan: <span id="stok"></span>
+</div>
+</div>
+
+<hr>
+
+<div class="filter-section">
+<h3>Filter Layanan</h3>
+
+<select id="filter">
+<option value="">Semua</option>
+<option>Basic</option>
+<option>Premium</option>
+<option>VIP</option>
+</select>
+</div>
+
+</aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
