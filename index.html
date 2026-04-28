@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>GlowFit Gym</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>GlowFit Gym</title>
+        
+    <link rel="stylesheet" href="/GLOWFIT-GYM-PWEB/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
 </head>
 
 <body>
@@ -14,13 +16,13 @@
 <nav>
     <div class="logo">GlowFit Gym</div>
     <div class="logo">
-        <img src="GLOWFIT GYM.png" alt="GlowFit Gym">
+    <img src="{{ asset('GLOWFIT-GYM-PWEB/GLOWFIT GYM.png') }}">
     </div>
     <div class="menu">
-        <a href="index.html">Beranda</a>
-        <a href="member.html">Paket Membership</a>
-        <a href="#">Kelas GLOWFIT</a>
-        <a href="#">Kontak</a>
+        <a href="/dashboard">Beranda</a>
+        <a href="/member">Paket Membership</a>
+        <a href="/kelas">Kelas GLOWFIT</a>
+        <a href="/kontak">Kontak</a>
     </div>
     <div class="nav-search">
         <input type="text" id="navSearch" placeholder="Cari...">
@@ -49,7 +51,7 @@
 <div class="cards">
 
 <div class="card">
-<img src="gymarea.png">
+<img src="{{ asset('GLOWFIT-GYM-PWEB/gymarea.png') }}">
 <h4>Gym Area</h4>
 <p>Kapasitas: 50</p>
 </div>
@@ -158,11 +160,9 @@
 
 </footer>
 </div>
-<hr>
-</select>
-
-<script src="script.js"></script>
+<hr>    
 </body>
+<script src="{{ asset('GLOWFIT-GYM-PWEB/script.js') }}"></script>
 </body>
 </html>
 
